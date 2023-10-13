@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ClassesAndObjects/.vs/ClassesAndObjects
+/ClassesAndObjects/bin/Debug/net7.0
+/ClassesAndObjects/obj
