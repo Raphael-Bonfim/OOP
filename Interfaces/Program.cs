@@ -1,12 +1,10 @@
-﻿using Microsoft.VisualBasic;
-
-namespace Interfaces;
+﻿namespace Interfaces;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Interfaces");
     }
     /*
         A class that implements an interface must provide implementations for all the members declared
