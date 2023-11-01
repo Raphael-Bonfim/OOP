@@ -32,7 +32,7 @@ class Program
 
         //Properties
         public DateTime DueDate { get; private set; }
-        
+
         public double Amount { get; private set; }
 
         //Methods
