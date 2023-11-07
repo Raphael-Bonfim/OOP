@@ -24,3 +24,7 @@
 /ComparingObjects/obj
 /UpcastAndDowncast/.vs/ProjectEvaluation
 *.v2
+/ComparingObjects/.vs/ProjectEvaluation
+/Delegates/.vs/Delegates
+/Delegates/bin/Debug/net7.0
+/Delegates/obj
