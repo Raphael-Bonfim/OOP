@@ -19,3 +19,8 @@
 /UpcastAndDowncast/bin/Debug/net7.0
 /UpcastAndDowncast/obj
 /UpcastAndDowncast/.vs/UpcastAndDowncast/v17
+/ComparingObjects/.vs/ComparingObjects
+/ComparingObjects/bin/Debug/net7.0
+/ComparingObjects/obj
+/UpcastAndDowncast/.vs/ProjectEvaluation
+*.v2
