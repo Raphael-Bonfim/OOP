@@ -1,4 +1,6 @@
 ﻿using DotCourse.ContentContext;
+using DotCourse.NotificationContext;
+using DotCourse.SubscriptionContext;
 
 namespace DotCourse;
 
@@ -25,12 +27,12 @@ class Program
 
         courses.Add(courseOOP);
         courses.Add(courseCsharp);
-        courses.Add(courseAspnet);
+        courses.Add(courseAspnet);      
 
         var careers = new List<Career>();
         var careerDotnet = new Career(".NET Specialist", "especialista-dotnet ");
-        var careerItem = new CareerItem(1, "Start Here", "", null);
-        var careerItem2 = new CareerItem(2, "Learn .NET", "", null);
+        var careerItem = new CareerItem(1, "Start Here", "", courseCsharp);
+        var careerItem2 = new CareerItem(2, "Learn .NET", "", courseAspnet);
         var careerItem3 = new CareerItem(3, "Learn OOP", "", null);
 
         careerDotnet.Items.Add(careerItem);
@@ -45,7 +47,20 @@ class Program
             foreach (var item in career.Items.OrderBy(x => x.Order))
             {
                 Console.WriteLine($"{item.Order} - {item.Title}");
+                Console.WriteLine(item.Course?.Title);
+                Console.WriteLine(item.Course?.Level);
+
+                foreach (var notification in item.Notifications)
+                {
+                    Console.WriteLine($"{notification.Property} - {notification.Message}");
+                }
             }
+
+            var payPalSubscription = new PayPalSubscription();
+
+            var student = new Student();
+
+            student.CreateSubscription(payPalSubscription);
         }
     }
 }

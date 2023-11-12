@@ -1,6 +1,8 @@
-﻿namespace DotCourse.ContentContext
+﻿using DotCourse.SharedContext;
+
+namespace DotCourse.ContentContext
 {
-    public class Module
+    public class Module : Base
     {
         public Module()
         {

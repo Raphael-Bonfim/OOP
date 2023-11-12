@@ -1,9 +1,15 @@
-﻿namespace DotCourse.ContentContext
+﻿using DotCourse.NotificationContext;
+using DotCourse.SharedContext;
+
+namespace DotCourse.ContentContext
 {
-    public class CareerItem
+    public class CareerItem : Base
     {
         public CareerItem(int order, string title, string description, Course course)
         {
+            if (course == null)
+                AddNotification(new Notification("Course", "Invalid course"));
+
             Order = order;
             Title = title;
             Description = description;
